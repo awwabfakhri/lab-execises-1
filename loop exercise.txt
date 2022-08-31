@@ -1,0 +1,26 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int i=1;
+    float number,sum,average;
+    sum=0;
+    average=0;
+    
+    while(i<13)
+    {
+        cout << " Please enter an hourly profit\n ";
+        cin >> number;
+        sum = sum+number;
+        i++;
+        
+    }
+    
+    average = sum / (i-1);
+    cout << " \nThe sum of the Bliss' Cafe hourly profit is: " << sum;
+    cout << " \nThe daily sale of Bliss' Cafe is: " << average;
+    return 0;
+    
+}
