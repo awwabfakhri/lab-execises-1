@@ -1,0 +1,40 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+   char UserIN;
+   
+   cout<<"please enter a character to determine your grade \n";
+   cout<<"A=4.0, B=2.7, C=2.0, D=1.0, E=0 \n";
+   cin>>UserIN;
+
+      switch(UserIN)
+   {
+       case 'A':
+       cout<<"your grade is 4.0";
+       break;
+       
+       case 'B':
+       cout<<"your grade is 2.7";
+       break;
+   
+       case 'C':
+       cout<<"your grade is 2.0";
+       break;
+       
+       case 'D':
+       cout<<"your grade is 1.0";
+       break;
+       
+       case 'E':
+       cout<<"your grade is 0";
+       break;
+       
+       default:
+       cout<<"Read the instruction carefully, please enter your correct grade again";
+       break;
+   }
+      
+    return 0;
+}
