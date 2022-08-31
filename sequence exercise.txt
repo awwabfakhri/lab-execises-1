@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  string name;
+  int Birthyear;
+  cout << "This is where you count your age: " << endl;
+  cout << "Enter your name: ";
+  getline(cin, name);
+
+  cout << "Enter your birthyear: ";
+  cin >> Birthyear;
+  int CurrentYear = 2022;
+  int age = CurrentYear - Birthyear;
+  cout << "*********************************" << endl;
+  cout << "Hi " + name + "," << endl;
+  cout << "Your current age is: " + to_string(age) + " years old." << endl;
+}
