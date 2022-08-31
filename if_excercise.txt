@@ -1,0 +1,10 @@
+Write a program using If..else statement that will determine the economic category of
+people according to their Monthly salary
+
+Accept the name, age and salary 
+as input. Then determine the category of their income as per table below:
+
+<4000		:B40
+>4000,<10000	:M40
+>10000		:T20
+
