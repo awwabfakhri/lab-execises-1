@@ -1,10 +1,35 @@
-Write a program using If..else statement that will determine the economic category of
-people according to their Monthly salary
+#include <iostream>
+#include <string>
 
-Accept the name, age and salary 
-as input. Then determine the category of their income as per table below:
+using namespace std;
 
-<4000		:B40
->4000,<10000	:M40
->10000		:T20
+int main()
+{
+  string name;
+  int age;
+  double salary;
 
+  cout << "Enter your name: ";
+  getline(cin, name);
+  cout << "Enter your age: ";
+  cin >> age;
+  cout << "Enter your monthly salary: ";
+  cin >> salary;
+  
+  if (salary == 0)
+  {
+    cout << "Please insert your actual salary. " << endl;
+  }
+  else if (salary <= 4000)
+  {
+    cout << name + ", " + to_string(age) + " y/o, you're in B40 category." << endl;
+  }
+  else if (salary > 4000 && salary <= 10000)
+  {
+    cout << name + ", " + to_string(age) + " y/o, you're in M40 category." << endl;
+  }
+  else if (salary > 10000)
+  {
+    cout << name + ", " + to_string(age) + " y/o, you're in T20 category." << endl;
+  }
+}
